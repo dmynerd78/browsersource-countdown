@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2017-10-19
+Random fixes
+### Added
+- Override OBS' custom background css
+
 ## [1.0.0] - 2017-10-18
 Initial Commit
 ### Added

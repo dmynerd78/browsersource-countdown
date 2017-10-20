@@ -2,10 +2,10 @@
 <html>
 <head>
 </head>
-<body>
+<body style="background: #fff !important;">
     <span id="countdown"></span>
     <div id="form">
-        <h1>Dmynerd's Countdown Generator Version 1.0.0</h1>
+        <h1>Dmynerd's Countdown Generator Version 1.0.1</h1>
         <h2>If you are seeing this in your preview then you did something wrong!</h2>
         <p>Please fill in any variables that you would like to change then hit <b>Generate Countdown URL</b> to get the URL.</p>
         <br>
@@ -112,6 +112,7 @@
             console.error("No arguments given, showing form instead of countdown");
             document.querySelector("#countdown").setAttribute("style", "display: none;");
         } else {
+            console.log("Arguments given - getting params...");
             document.querySelector("#form").setAttribute("style", "display: none;");
             args = decodeURIComponent(window.location.search.slice(1)).split("&");
             console.log(args);
@@ -149,7 +150,7 @@
         }
 
         function createCountdown(params) {
-            document.querySelector("body").setAttribute("style", "background:" + params["bgColor"]);
+            document.querySelector("body").setAttribute("style", "background:" + params["bgColor"] + "!important;"); // Used important since OBS defaults to transparent
             document.querySelector("#countdown").setAttribute("style", "color:" + params["fgColor"] + "; font-family:'" + params["font"] + "'; animation-duration: " + params["fDuration"] + "s;");
 
             timer = parseInt(params["minutes"]) * 60 + parseInt(params["seconds"]);
