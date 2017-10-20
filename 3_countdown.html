@@ -1,15 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <title>Dmynerd's Countdown Generator Version 1.0.2</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dmynerd78">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="background: #fff !important;">
     <span id="countdown"></span>
     <div id="form">
-        <h1>Dmynerd's Countdown Generator Version 1.0.1</h1>
+        <h1>Dmynerd's Countdown Generator Version 1.0.2</h1>
         <h2>If you are seeing this in your preview then you did something wrong!</h2>
         <p>Please fill in any variables that you would like to change then hit <b>Generate Countdown URL</b> to get the URL.</p>
         <br>
-    
+
         <h2>Minutes</h2>
         <span>Amount of minutes</span>
         <br>
@@ -23,17 +27,23 @@
         <br>
 
         <h2>Background Color</h2>
-        <span>Color of the background using hexidecimal, rgb, rgba, etc.
-        <br>
-        <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Use this if you are confused</a></span>
+        <span>
+            Color of the background using hexidecimal, rgb, rgba, etc.
+            <br>
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Use this if you are confused</a>
+            <br>
+            <a href="http://www.colorzilla.com/gradient-editor/" target="_blank">You can also use gradients</a><span>. Just copy *-gradient line (but don't copy the semi-colon)</span>
+        </span>
         <br>
         <input type="text" name="bgColor" placeholder="rgba(0,0,0,0)" />
         <br>
 
         <h2>Countdown Text Color</h2>
-        <span>Color of the countdown text using hexidecimal, rgb, rgba, etc.
-        <br>
-        <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Use this if you are confused</a></span>
+        <span>
+            Color of the countdown text using hexidecimal, rgb, rgba, etc.
+            <br>
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Use this if you are confused</a>
+        </span>
         <br>
         <input type="text" name="fgColor" placeholder="#000000" />
         <br>
@@ -72,7 +82,7 @@
             padding: 0;
             height: 100%;
         }
-        
+
         body {
             display: flex;
             justify-content: center; /* align horizontal */
@@ -82,7 +92,7 @@
         h1, h2, h3, h4, h5 { margin-bottom: 5px; }
         input { margin-top: 5px; }
         a:visited { color: blue; }
-        
+
         #form {
             text-align: center;
             margin: 5%;
@@ -95,12 +105,12 @@
         }
 
         #countdown { font-size: 200px; }
-        
+
         .flash {
             animation-name: animFlash;
             animation-iteration-count: infinite;
         }
-        
+
         @keyframes animFlash {
             0%   {opacity:1;}
             25%   {opacity:1;}
