@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 Random fixes
 ### Added
 - Override OBS' custom background css
+- Vertically center text
 
 ## [1.0.0] - 2017-10-18
 Initial Commit
