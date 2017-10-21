@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+ ## [1.0.3] - 2017-10-19
+ Preparing for bootstrapification
+ ### Modified
+ - Improved gif
+ - Reorganized structure
+
 ## [1.0.2] - 2017-10-19
 Improvements!
 ### Added
@@ -11,7 +17,7 @@ Improvements!
 ## [1.0.1] - 2017-10-19
 Random fixes
 ### Added
-- Override OBS' custom background css
+- Override OBS' custom background CSS
 - Text is now centered both vertically and horizontally
 
 ## [1.0.0] - 2017-10-18

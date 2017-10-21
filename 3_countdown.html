@@ -1,86 +1,18 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-    <title>Dmynerd's Countdown Generator Version 1.0.2</title>
+<head lang="en">
+    <title>Dmynerd's Countdown Generator v1.0.3</title>
     <meta charset="UTF-8">
     <meta name="author" content="Dmynerd78">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="background: #fff !important;">
-    <span id="countdown"></span>
-    <div id="form">
-        <h1>Dmynerd's Countdown Generator Version 1.0.2</h1>
-        <h2>If you are seeing this in your preview then you did something wrong!</h2>
-        <p>Please fill in any variables that you would like to change then hit <b>Generate Countdown URL</b> to get the URL.</p>
-        <br>
-
-        <h2>Minutes</h2>
-        <span>Amount of minutes</span>
-        <br>
-        <input type="text" name="minutes" placeholder="1" autofocus />
-        <br>
-
-        <h2>Seconds</h2>
-        <span>Amount of seconds</span>
-        <br>
-        <input type="text" name="seconds" placeholder="00" />
-        <br>
-
-        <h2>Background Color</h2>
-        <span>
-            Color of the background using hexidecimal, rgb, rgba, etc.
-            <br>
-            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Use this if you are confused</a>
-            <br>
-            <a href="http://www.colorzilla.com/gradient-editor/" target="_blank">You can also use gradients</a><span>. Just copy *-gradient line (but don't copy the semi-colon)</span>
-        </span>
-        <br>
-        <input type="text" name="bgColor" placeholder="rgba(0,0,0,0)" />
-        <br>
-
-        <h2>Countdown Text Color</h2>
-        <span>
-            Color of the countdown text using hexidecimal, rgb, rgba, etc.
-            <br>
-            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Use this if you are confused</a>
-        </span>
-        <br>
-        <input type="text" name="fgColor" placeholder="#000000" />
-        <br>
-
-        <h2>Countdown Text Font</h2>
-        <span>Choose a font that is installed onto your PC</span>
-        <br>
-        <input type="text" name="font" placeholder="Arial" />
-        <br>
-
-        <h2>Flashing Text</h2>
-        <span>The countdown text flashes once it reaches zero</span>
-        <br>
-        <input type="text" name="flash" placeholder="true" />
-        <br>
-
-        <h2>Flashing Duration</h2>
-        <span>The amount of time the text will be displayed before being hidden again in seconds</span>
-        <br>
-        <input type="text" name="fDuration" placeholder="1" />
-        <br>
-        <br>
-
-        <button onclick="genURL();">Generate Countdown URL</button>
-        <div id="countdownSpans" style="display: none;">
-            <br>
-            <br>
-            <span>Place this URL in OBS/XSplit:</span>
-            <br>
-            <span id="countdownURL"></span>
-        </div>
-    </div>
     <style>
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
         }
 
         body {
@@ -121,6 +53,79 @@
         }
 
     </style>
+    <span id="countdown"></span>
+    <div id="form">
+        <h1>Dmynerd's Countdown Generator v1.0.3</h1>
+        <h2>If you are seeing this in your preview then you did something wrong!</h2>
+        <p>Please fill in any variables that you would like to change then hit <b>Generate Countdown URL</b> to get the URL.</p>
+        <br />
+
+        <h2>Minutes</h2>
+        <span>Amount of minutes</span>
+        <br />
+        <input type="text" name="minutes" placeholder="1" autofocus />
+        <br />
+
+        <h2>Seconds</h2>
+        <span>Amount of seconds</span>
+        <br />
+        <input type="text" name="seconds" placeholder="00" />
+        <br />
+
+        <h2>Background Color</h2>
+        <span>
+            Color of the background using hexidecimal, rgb, rgba, etc.
+            <br />
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Use this if you are confused</a>
+            <br />
+            <a href="http://www.colorzilla.com/gradient-editor/" target="_blank">You can also use gradients</a><span>. Just copy *-gradient line (but don't copy the semi-colon)</span>
+        </span>
+        <br />
+        <input type="text" name="bgColor" placeholder="rgba(0,0,0,0)" />
+        <br />
+
+        <h2>Countdown Text Color</h2>
+        <span>
+            Color of the countdown text using hexidecimal, rgb, rgba, etc.
+            <br />
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">Use this if you are confused</a>
+        </span>
+        <br />
+        <input type="text" name="fgColor" placeholder="#000000" />
+        <br />
+
+        <h2>Countdown Text Font</h2>
+        <span>
+            Choose a font that is installed onto your PC.
+            <br />
+            Example fonts:  <u>Times New Romans</u>, <u>Comic Sans MS</u>, and <u>Impact</u>
+        </span>
+        <br />
+        <input type="text" name="font" placeholder="Arial" />
+        <br />
+
+        <h2>Flashing Text</h2>
+        <span>The countdown text flashes once it reaches zero</span>
+        <br />
+        <input type="text" name="flash" placeholder="true" />
+        <br />
+
+        <h2>Flashing Duration</h2>
+        <span>The amount of time the text will be displayed before being hidden again in seconds</span>
+        <br />
+        <input type="text" name="fDuration" placeholder="1" />
+        <br />
+        <br />
+
+        <button onclick="genURL();">Generate Countdown URL</button>
+        <div id="countdownSpans" style="display: none;">
+            <br />
+            <br />
+            <span>Place this URL in OBS/XSplit:</span>
+            <br />
+            <span id="countdownURL"></span>
+        </div>
+    </div>
     <script>
         // Possibly use FitText?
 
