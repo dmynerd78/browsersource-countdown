@@ -1,5 +1,7 @@
 ![Countdown Preview](dev/countdown.gif)
 
+# Countdown has been discontinued as OBS has this feature as of [v21](https://github.com/jp9000/obs-studio/releases/tag/21.0.0)
+
 ## Using the Countdown
 1. Download the `countdown.html` file
 2. Open the file in Chrome, Firefox, etc. (**NOTE: Internet Explorer will NOT work**)
